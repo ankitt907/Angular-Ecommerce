@@ -1,0 +1,70 @@
+<form #updateProductForm (submit)="updateProduct(updateProductForm)" class="form-horizontal" >
+        
+    <!-- Form Name -->
+    <legend><b>Update Products</b></legend>
+
+
+  <div class="row">
+
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Product Name</label>
+      <input type="text" class="form-control" id="productname" name="productname" #productname   placeholder="Product Name" value="{{productDetails.name}}" >
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Category</label>
+      <select class="form-control"  id="productcategory" name="productcategory" ngModel>
+        <option selected value="">Choose</option>
+        <option *ngFor="let catg of categoryList" value="{{catg.id}}"  [selected]="productDetails.categoryId==catg.id">{{catg.categoryName}}</option>
+    
+      </select>
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Description</label>
+     <textarea class="form-control" name="productdescription" ngModel>{{productDetails.description}}</textarea>
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Rating</label>
+      <select class="form-control"  id="rating" name="productrating" ngModel>
+        <option selected value="">Choose</option>
+        <option [selected]="productDetails.rating==1" value="1">1</option>
+        <option [selected]="productDetails.rating==2" value="2">2</option>
+        <option [selected]="productDetails.rating==3" value="3">3</option>
+        <option [selected]="productDetails.rating==4" value="4">4</option>
+        <option [selected]="productDetails.rating==5" value="5">5</option>
+        <option [selected]="productDetails.rating==6" value="6">6</option>
+      </select>
+    </div>
+  
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Is Avaiable</label>
+      <select class="form-control"  name="product_available" ngModel>
+        <option selected value="">Choose</option>
+        <option [selected]="productDetails.is_avilable==1" value="1">Yes</option>
+        <option [selected]="productDetails.is_avilable==0" value="0">No</option>
+       
+      </select>
+    </div>
+
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Product Price</label>
+      <input type="text" class="form-control" id="productprice" name="productprice" value="{{productDetails.price}}"  placeholder="Product Price" >
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Review</label>
+      <select class="form-control"  name="productreview" ngModel>
+        <option selected value="">Choose</option>
+        <option [selected]="productDetails.review==1" value="1">1</option>
+        <option [selected]="productDetails.review==2" value="2">2</option>
+        <option [selected]="productDetails.review==3" value="3">3</option>
+        <option [selected]="productDetails.review==4" value="4">4</option>
+        <option [selected]="productDetails.review==5" value="5">5</option>
+        <option [selected]="productDetails.review==6" value="6">6</option>
+       
+      </select>
+    </div>
+
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary mb-2">Update</button>
+</form>
+    

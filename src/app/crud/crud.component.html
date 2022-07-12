@@ -1,0 +1,144 @@
+<div class="card">
+    <div class="card-header">
+    <div class="row col-12">
+        <div class="col-11">  List</div>      
+        <div class="col-1"> <a class="btn btn-primary" (click)="openPopup()">Add</a></div>      
+    </div>        
+  
+        </div>
+    <div class="card-body">
+        <div class="row col-12">
+            <div class=" col-9 ">
+            </div>
+
+            <div class=" col-3 ">
+                <div class="form-group">
+                    <input type="text" class="form-control" id="search" name="search" placeholder="Search" #searchItem (keyup)="search(searchItem)" value="" >
+                </div>
+            </div>
+        </div>
+        
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col" (click)="sort('id')">ID <i class="fa fa-sort"></i></th>
+        <th scope="col">Name<i class="fa fa-sort"></i></th>
+        <th scope="col">Email</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Fee </th>
+        <th rowspan="2" scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of studentlist |  paginate: { itemsPerPage: 3, currentPage: p };">
+        <td scope="row">{{item.id}}</td>
+        <td>{{item.name}}</td>
+        <td>{{item.email}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.fees}}</td>
+        <td><button type="button" class="btn btn-info ml-2" (click)="onedit(item.id)">Edit</button>&nbsp;
+             </td>
+             <td>  <button type="button" class="btn btn-danger " (click)="ondelete(item.id)">Delete</button>
+             </td>
+      </tr>
+  
+    </tbody>
+    <tfoot>
+   <tr><th> <pagination-controls (pageChange)="p =$event"></pagination-controls></th></tr>
+</tfoot> 
+</table>
+
+  
+  <!-- Modal -->
+  <div   class="modal"  tabindex="-1" role="dialog"   [ngStyle]="{'display':displayStyle}">
+        <div class="modal-dialog" role="document" >
+
+            <div class="modal-content">
+        
+                <div class="modal-header">
+                <h4 class="modal-title"> Student Details</h4>
+            </div>
+
+        <div *ngIf="studentByID">                
+            <form  #studentdata>
+            <div class="modal-body">
+            
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="name" name="name" placeholder="Name" required value="{{studentByID['name'] }}"  formControlName="name">
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" name="email" required placeholder="name@example.com" value="{{studentByID['email'] }}">
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mobile</label>
+                        <input type="number" class="form-control" id="mobile" required name="mobile" placeholder="983212318" value="{{studentByID['mobile'] }}">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Fee</label>
+                        <input type="number" class="form-control" id="fees" required name="fees" formControlName="fees" value="{{studentByID['fees'] }}" placeholder="1000">
+                    </div>
+        
+                    
+        
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="updatestudent(studentdata)">
+                Update
+                </button>
+
+                <button type="button" class="btn btn-danger" 
+                        (click)="closePopup()">
+                Close
+                </button>
+            </div>
+            </form>
+        </div>
+            
+        <div *ngIf="!studentByID">                
+            <form  #studentdata>
+            <div class="modal-body" >
+            
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Name</label>
+                        <input type="text" class="form-control" id="name" required name="name" placeholder="Name"  >
+                    </div>
+                    <div class="form-group">
+                    <label for="email">Email address</label>
+                    <input type="email" class="form-control" id="email" required name="email" placeholder="name@example.com" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Mobile</label>
+                        <input type="number" class="form-control" id="mobile" required name="mobile" placeholder="983212318" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="exampleFormControlInput1">Fee</label>
+                        <input type="number" class="form-control" id="fees" required name="fees" formControlName="fees" placeholder="1000" >
+                    </div>
+        
+                    
+        
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" (click)="addstudent(studentdata)">
+                Save
+                </button>
+
+                <button type="button" class="btn btn-danger" 
+                        (click)="closePopup()">
+                Close
+                </button>
+            </div>
+            </form>
+        </div>
+    </div>
+        
+        </div>
+  </div>
+
+<router-outlet>    </router-outlet>
+    </div>
+</div>

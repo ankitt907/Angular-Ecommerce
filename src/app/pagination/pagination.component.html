@@ -1,0 +1,49 @@
+<div class="card">
+    <div class="card-header">
+    <div class="row col-12">
+        <div class="col-11">  Pagination</div>      
+    
+    </div>        
+  
+        </div>
+    <div class="card-body">
+        <div class="row col-12">
+            <div class=" col-9 ">
+            </div>
+
+    
+        </div>
+        
+<table class="table">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col" >ID </th>
+        <th scope="col">Name</th>
+        <th scope="col">Designation</th>
+        <th scope="col">Mobile</th>
+        <th scope="col">Salary </th>
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let item of employeeList | paginate:{itemsPerPage:5,currentPage:p} ">
+        <td scope="row">{{item.id}}</td>
+        <td>{{item.name | custompipe:item.gender}} </td>
+        <td>{{item.designation}}</td>
+        <td>{{item.mobile}}</td>
+        <td>{{item.salary}}</td>
+       
+      </tr> 
+  
+    </tbody>
+    <tfoot>
+        <pagination-controls (pageChange)="p=$event"></pagination-controls>
+    </tfoot>
+</table>
+
+  
+
+
+<router-outlet>    </router-outlet>
+    </div>
+</div>

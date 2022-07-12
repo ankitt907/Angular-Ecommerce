@@ -1,0 +1,16 @@
+<div class="jumbotron bg-primary text-cent" style="color: white;">File Upload</div>
+<div class="container">
+    <div class="text-center">
+        <input type="file" name="" (change)="onChange($event)"  class="form-group" id="">
+        <button (click)="onUpload()" class="btb btn-success">Upload File</button>
+    </div>
+
+    <div class="container text-center jumbotron" >
+        <h5> Visit Here</h5>
+        <a href="{{shortLink}}">{{shortLink}}</a>
+    </div>
+
+    <div class="container text-center" >
+        <h3>Loading data....</h3>
+    </div> 
+</div>

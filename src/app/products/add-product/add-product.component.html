@@ -1,0 +1,71 @@
+<form #addProductForm (submit)="addNewProduct(addProductForm)" class="form-horizontal" >
+        
+    <!-- Form Name -->
+    <legend><b>Add New Products</b></legend>
+
+
+  <div class="row">
+
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Product Name</label>
+      <input type="text" class="form-control" id="productname" name="productname" #productname required  placeholder="Product Name" ngModel >
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Category</label>
+      <!-- <input type="text" class="form-control" id="productcategory" name="productcategory"    placeholder="Category Name" ngModel> -->
+      <select class="form-control"  id="productcategory" name="productcategory" required ngModel>
+        <option selected value="">Choose</option>
+        <option *ngFor="let catg of categoryList" value="{{catg.id}}">{{catg.categoryName}}</option>
+      
+      </select>
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Description</label>
+     <textarea class="form-control" name="productdescription" required ngModel></textarea>
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Rating</label>
+      <select class="form-control"  id="rating" name="productrating" required ngModel>
+        <option selected value="">Choose</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+      </select>
+    </div>
+  
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Is Avaiable</label>
+      <select class="form-control" required  name="product_available" ngModel>
+        <option selected value="">Choose</option>
+        <option value="1">Yes</option>
+        <option value="0">No</option>
+       
+      </select>
+    </div>
+
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Product Price</label>
+      <input type="text" class="form-control" required id="productprice" name="productprice"  placeholder="Product Price" ngModel>
+    </div>
+    <div class="col-6 form-group">
+      <label for="exampleInputEmail1">Review</label>
+      <select class="form-control" required  name="productreview" ngModel>
+        <option selected value="">Choose</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5</option>
+        <option value="6">6</option>
+       
+      </select>
+    </div>
+
+  </div>
+  <br>
+  <button type="submit" class="btn btn-primary mb-2">Submit</button>
+</form>
+    

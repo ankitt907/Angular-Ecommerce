@@ -1,0 +1,17 @@
+<h1>View Carts Items</h1>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Product No</th>
+            <th>Product Name</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let item of cart">
+            <td>{{item['id']}}</td>
+            <td>{{item.productName}}</td>
+            <td><a routerLink="../view-product/{{item.productId}}">View Product</a></td>
+        </tr>
+    </tbody>
+</table>

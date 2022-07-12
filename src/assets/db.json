@@ -1,0 +1,429 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
+    }
+  ],
+  "comments": [
+    {
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
+    }
+  ],
+  "categories": [
+    {
+      "id": 1,
+      "categoryName": "Electronics"
+    },
+    {
+      "id": 2,
+      "categoryName": "Men"
+    },
+    {
+      "id": 3,
+      "categoryName": "Women"
+    },
+    {
+      "id": 4,
+      "categoryName": "Home & Furniture"
+    },
+    {
+      "id": 5,
+      "categoryName": "Baby & Kids"
+    }
+  ],
+  "product": [
+    {
+      "id": 1,
+      "name": "Product-1",
+      "categoryId": 1,
+      "price": 151,
+      "description": "This is good producs",
+      "productImage": "http://localhost:4200/assets/image/frg.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 3,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 2,
+      "name": "Product-2",
+      "categoryId": 2,
+      "price": 410,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/shirt-3.jfif",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 3,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 3,
+      "name": "Product-3",
+      "categoryId": 3,
+      "price": 320,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/frg.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 3,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 4,
+      "name": "Product-4",
+      "categoryId": 1,
+      "price": 500,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/tv-2.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 4,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 7,
+      "name": "Product-7",
+      "categoryId": 3,
+      "price": 120,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/frg.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 4,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 8,
+      "name": "Product-8",
+      "categoryId": 4,
+      "price": 160,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/fur-3.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 4,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 9,
+      "name": "Product-9",
+      "categoryId": 1,
+      "price": 170,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/irone-1.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 2,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 11,
+      "name": "Product-11",
+      "categoryId": 4,
+      "price": 300,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/fur-2.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 2,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 12,
+      "name": "Product-12",
+      "categoryId": 1,
+      "price": 210,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/fan.jfif",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 2,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 13,
+      "name": "Product-13",
+      "categoryId": 5,
+      "price": 320,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/baby-1.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 2,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 14,
+      "name": "Product-14",
+      "categoryId": 3,
+      "price": 54,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/jeans-2.jfif",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 1,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 15,
+      "name": "Product-16",
+      "categoryId": 2,
+      "price": 510,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/shirt-2.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 1,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    },
+    {
+      "id": 16,
+      "name": "Product-15",
+      "categoryId": 5,
+      "price": 230,
+      "description": "This is good producs ",
+      "productImage": "http://localhost:4200/assets/image/baby-2.jpg",
+      "is_avilable": true,
+      "rating": 1,
+      "review": 1,
+      "vendor_name": "myshop",
+      "warrenty": 1
+    }
+  ],
+  "cart": [
+    {
+      "id": 1,
+      "productId": 1,
+      "productName": "Product-1",
+      "quantity": 1
+    },
+    {
+      "id": 4,
+      "productId": "7",
+      "productName": "Product-7",
+      "quantity": "2"
+    },
+    {
+      "id": 5,
+      "productId": "4",
+      "productName": "Product-4",
+      "quantity": "7"
+    }
+  ],
+  "post": [
+    {
+      "name": "Abc",
+      "email": "abc@gmail.com",
+      "mobile": "9087431410",
+      "fees": "3000",
+      "id": 1
+    },
+    {
+      "name": "Na",
+      "email": "naman785@elegantmicroweb.com",
+      "mobile": "7621128910",
+      "fees": "4000",
+      "id": 73
+    },
+    {
+      "id": 2,
+      "name": "SECURITY1",
+      "email": "narayan27@gmail.com",
+      "mobile": "9076962296",
+      "fees": "230"
+    },
+    {
+      "name": "Bhu",
+      "email": "shard@gmail.com",
+      "mobile": "9867278987",
+      "fees": "12000",
+      "id": 60
+    },
+    {
+      "id": 88,
+      "name": "Abbas",
+      "email": "abbas@gmail.com",
+      "mobile": "8978654510",
+      "fees": "1200"
+    },
+    {
+      "id": 8,
+      "name": "Sahil",
+      "email": "taha@elegantmicroweb.com",
+      "mobile": "9076962896",
+      "fees": "500"
+    }
+  ],
+  "employee": [
+    {
+      "id": 1,
+      "name": "Abc",
+      "designation": "Jr Manager",
+      "mobile": "9087234410",
+      "salary": "5000",
+      "gender": "male"
+    },
+    {
+      "id": 2,
+      "name": "B",
+      "designation": "Jr",
+      "mobile": "9045232310",
+      "salary": "5000",
+      "gender": "male"
+    },
+    {
+      "id": 3,
+      "name": "CWs",
+      "designation": "Sales",
+      "mobile": "9087224410",
+      "salary": "5000",
+      "gender": "male"
+    },
+    {
+      "id": 4,
+      "name": "Dock",
+      "designation": "Sales",
+      "mobile": "9083231410",
+      "salary": "7000"
+    },
+    {
+      "id": 5,
+      "name": "ERos",
+      "designation": "Sales",
+      "mobile": "9087224410",
+      "salary": "7000",
+      "gender": "male"
+    },
+    {
+      "id": 6,
+      "name": "RFF",
+      "designation": "Jr",
+      "mobile": "9087641410",
+      "salary": "800",
+      "gender": "male"
+    },
+    {
+      "id": 7,
+      "name": "G",
+      "designation": "Jr",
+      "mobile": "9567231410",
+      "salary": "800",
+      "gender": "female"
+    },
+    {
+      "id": 8,
+      "name": "H",
+      "designation": "Hr",
+      "mobile": "9087231410",
+      "salary": "9000",
+      "gender": "female"
+    },
+    {
+      "id": 9,
+      "name": "NRD",
+      "designation": "Hr",
+      "mobile": "9083431410",
+      "salary": "9000",
+      "gender": "male"
+    },
+    {
+      "id": 10,
+      "name": "JLD",
+      "designation": "Sr Manage",
+      "mobile": "9044231410",
+      "salary": "7600",
+      "gender": "female"
+    },
+    {
+      "id": 11,
+      "name": "RLD",
+      "designation": "Sr Manage",
+      "mobile": "9087671410",
+      "salary": "1100",
+      "gender": "female"
+    },
+    {
+      "id": 12,
+      "name": "PSD",
+      "designation": "Sr Manage",
+      "mobile": "90831410",
+      "salary": "1100",
+      "gender": "male"
+    },
+    {
+      "id": 13,
+      "name": "ASD",
+      "designation": "Clerk",
+      "mobile": "9089231410",
+      "salary": "1900",
+      "gender": "female"
+    },
+    {
+      "id": 14,
+      "name": "DAQ",
+      "designation": "Clerk",
+      "mobile": "9009231410",
+      "salary": "1900",
+      "gender": "male"
+    },
+    {
+      "id": 15,
+      "name": "DWS",
+      "designation": "Cashiar",
+      "mobile": "9083431410",
+      "salary": "1900",
+      "gender": "female"
+    },
+    {
+      "id": 16,
+      "name": "EDD",
+      "designation": "Cashiar",
+      "mobile": "9087431410",
+      "salary": "8000",
+      "gender": "female"
+    },
+    {
+      "id": 17,
+      "name": "SHD",
+      "designation": "Speaker",
+      "mobile": "9087731410",
+      "salary": "8000",
+      "gender": "male"
+    },
+    {
+      "id": 18,
+      "name": "ND",
+      "designation": "Speaker",
+      "mobile": "9087901410",
+      "salary": "6000",
+      "gender": "female"
+    },
+    {
+      "id": 19,
+      "name": "DK",
+      "designation": "Jr",
+      "mobile": "9087511410",
+      "salary": "6000",
+      "gender": "male"
+    }
+  ],
+  "profile": {
+    "name": "typicode"
+  }
+}

@@ -1,0 +1,25 @@
+<app-header></app-header>
+
+<section class="py-5">
+    <div class="container">
+ <div class="row">
+    <div class="col-3">
+        <div class="border-end bg-white" id="sidebar-wrapper">
+                      <div class="list-group list-group-flush">
+            
+                <!-- <button class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/product/add-product" routerLinkActive="active" >Add Products</button> -->
+                <!-- <button class="list-group-item list-group-item-action list-group-item-light p-3" routerLink="/product/add-product" routerLinkActive="active" >View Products</button> -->
+
+  
+<app-sidebar></app-sidebar>
+                
+            </div>
+        </div>
+    </div>
+    <div class="col-9">
+    <router-outlet></router-outlet>
+    </div>
+</div>
+</div>
+</section>
+<app-footer>

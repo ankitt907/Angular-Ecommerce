@@ -1,0 +1,26 @@
+
+<div class="sidebar-heading border-bottom bg-light">Pagination</div>
+<div class="list-group">
+    <a href="pagination/" class="list-group-item" >Pagination</a>  
+      
+</div>
+
+
+<div class="sidebar-heading border-bottom bg-light">Crud</div>
+<div class="list-group">
+    <a href="crud/" class="list-group-item" >Crude Operation</a>  
+      
+</div>
+
+
+<div class="sidebar-heading border-bottom bg-light">File</div>
+<div class="list-group">
+    <a href="file" class="list-group-item" >File Upload</a>   
+</div>
+
+<div class="sidebar-heading border-bottom bg-light">Product</div>
+<div class="list-group">
+    <a href="product/list-product" class="list-group-item" >View All Products</a>
+    <a href="product/add-product" class="list-group-item" >Add New Product</a>
+    <a href="product/category/{{catg.id}}" class="list-group-item" *ngFor="let catg of categoryList">{{catg.categoryName}}</a>
+</div>
